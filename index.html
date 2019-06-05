@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_706a355691414d6dbe5dc23532238e1a {
+                #map_878f7277ec6d4994a469a0499d4a30eb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,17 +35,17 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_706a355691414d6dbe5dc23532238e1a" ></div>
+            <div class="folium-map" id="map_878f7277ec6d4994a469a0499d4a30eb" ></div>
         
 </body>
 <script>    
     
-            var map_706a355691414d6dbe5dc23532238e1a = L.map(
-                "map_706a355691414d6dbe5dc23532238e1a",
+            var map_878f7277ec6d4994a469a0499d4a30eb = L.map(
+                "map_878f7277ec6d4994a469a0499d4a30eb",
                 {
-                    center: [80.0, -100.0],
+                    center: [30.58, -99.09],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
+                    zoom: 6,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -55,9 +55,34 @@
 
         
     
-            var tile_layer_ebc81a98f9164ead81c280017ddfb855 = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_706a355691414d6dbe5dc23532238e1a);
+            var tile_layer_4ac0f8748ff742c9a1231e647d9e77ea = L.tileLayer(
+                "https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u0026copy; \u003ca href=\"http://www.mapbox.com/about/maps\"\u003eMapbox\u003c/a\u003e Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_878f7277ec6d4994a469a0499d4a30eb);
         
+    
+            var marker_3696af5ae47a414c8ac4b19a0ee03cbf = L.marker(
+                [38.2, -99.1],
+                {}
+            ).addTo(map_878f7277ec6d4994a469a0499d4a30eb);
+        
+    
+            var icon_c03a255cf6b0485289229c1caba6c9de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3696af5ae47a414c8ac4b19a0ee03cbf.setIcon(icon_c03a255cf6b0485289229c1caba6c9de);
+        
+    
+        var popup_4d29825c84fe43248630637a0c640411 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8609f5857dd84111a69c49c3d79f2294 = $(`<div id="html_8609f5857dd84111a69c49c3d79f2294" style="width: 100.0%; height: 100.0%;">hi i m a marker</div>`)[0];
+            popup_4d29825c84fe43248630637a0c640411.setContent(html_8609f5857dd84111a69c49c3d79f2294);
+        
+
+        marker_3696af5ae47a414c8ac4b19a0ee03cbf.bindPopup(popup_4d29825c84fe43248630637a0c640411)
+        ;
+
+        
+    
 </script>
